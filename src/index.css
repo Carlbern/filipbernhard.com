@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer {
+  @font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Italic.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: thin;
+    font-weight: 100;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Thin.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./assets/fonts/Fira_Sans/FiraSans-ExtraBold.ttf) format("truetype");
+  }
+}
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@theme {
+  --color-background: rgba(250, 247, 242, 1);
+  --color-primary: rgba(201, 183, 156, 1);
+  --color-secondary: rgba(107, 79, 58, 1);
+  --color-accent: rgba(43, 33, 24, 1);
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+    duration: 3s;
+  }
+}
+
+html,
+body {
+  @apply bg-background;
+}
