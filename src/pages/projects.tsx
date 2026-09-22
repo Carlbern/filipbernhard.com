@@ -50,43 +50,48 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen flex flex-col gap-5">
-      <div className="bg-[url('/public/assets/images/projectsHero_mobile.webp')] lg:bg-[url('/public/assets/images/projectsHero.webp')] flex items-center justify-center bg-cover bg-center h-[100dvh] lg:h-[98dvh]">
-        <div className="flex  flex-col gap-3 bg-primary/90 p-10 rounded-lg">
-          <h1 className="text-5xl font-bold text-white text-center">
-            My Projects
-          </h1>
-          <div>
-            <nav className="flex items-center justify-center mt-5 gap-10">
-              <a
-                className="cursor-pointer bg-accent hover:bg-secondary text-white px-2 rounded-lg"
-                onClick={() => scrollToSection(universitySection)}
-              >
-                University
-              </a>
-              <a
-                className="cursor-pointer bg-accent hover:bg-secondary text-white px-2 rounded-lg"
-                onClick={() => scrollToSection(personalSection)}
-              >
-                Personal
-              </a>
-            </nav>
+      <div className="flex items-center justify-center h-[100dvh]">
+        <div className="flex items-center justify-center bg-orange-600 w-[90%] h-[70%] lg:w-[70%] lg:h-[70%] rounded-sm transform -translate-2 lg:-translate-10 shadow-full">
+          <div className="flex flex-col gap-3 bg-primary p-10 rounded-sm w-[70%] h-[70%] transform translate-0 shadow-full">
+            <h1 className="text-3xl lg:text-5xl font-bold text-center">
+              My Projects
+            </h1>
+            <div className="transform lg:translate-x-25 lg:translate-y-10 lg:w-[70%] lg:h-[70%]">
+              <nav className="flex flex-col lg:flex-row justify-center mt-5 gap-10">
+                <a
+                  className="flex items-center justify-center lg:text-xl lg:w-50 lg:h-15  p-1 border-2 transform hover:translate-1 transition cursor-pointer hover:shadow-none rounded-sm bg-purple-500 shadow-small"
+                  onClick={() => scrollToSection(universitySection)}
+                >
+                  University
+                </a>
+                <a
+                  className="flex items-center justify-center lg:text-xl lg:w-50 lg:h-15 p-1 border-2 transform hover:translate-1 transition cursor-pointer hover:shadow-none rounded-sm bg-blue-500 shadow-small"
+                  onClick={() => scrollToSection(personalSection)}
+                >
+                  Personal
+                </a>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
 
       {!isLoading && (
         <div ref={universitySection}>
-          <ProjectSection data={universityProjects} bgColor="bg-background" />
+          <ProjectSection data={universityProjects} bgColor="bg-secondary/90" />
         </div>
       )}
       {!isLoading && (
         <div ref={personalSection}>
-          <ProjectSection data={personalProjects} bgColor="bg-primary" />
+          <ProjectSection data={personalProjects} bgColor="bg-primary/90" />
         </div>
       )}
       {!isLoading && (
         <div ref={professionalSection}>
-          <ProjectSection data={professionalProjects} bgColor="bg-background" />
+          <ProjectSection
+            data={professionalProjects}
+            bgColor="bg-secondary/90"
+          />
         </div>
       )}
     </div>

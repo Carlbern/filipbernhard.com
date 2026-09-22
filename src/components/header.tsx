@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export function Header() {
   return (
-    <div className="flex justify-center absolute bg-primary/80 w-full font-fira font-medium">
+    <div className="flex justify-center bg-primary shadow-header absolute w-full font-fira font-medium">
       <nav className="text-lg text-accent flex gap-10 p-[1px]">
         <Link className="hover:underline" to="/">
           Home
