@@ -15,6 +15,8 @@ const colorMap: Record<string, string> = {
   mongodb: "#4DB33D",
   expressJs: "#000000",
   nodeJs: "#339933",
+  PHP: "#474A8A",
+  MySQL: "#f29111",
 };
 const textColorMap: Record<string, string> = {
   react: "#000000",
@@ -23,12 +25,13 @@ const textColorMap: Record<string, string> = {
   python: "#000000",
   expressJs: "#FFFFFF",
   nodeJs: "#FFFFFF",
+  PHP: "#FFFFFF",
 };
 
 export function ProductCard(props: Props) {
   return (
     <div
-      className="w-[80%] max-w-[400px] lg:m-5 p-3 rounded-md shadow-corner flex flex-col gap-2"
+      className="w-[100%] md:w-[80%] max-w-[400px] lg:m-5 p-3 rounded-md shadow-corner flex flex-col gap-2"
       style={{
         backgroundColor: colorMap[props.technologies[0]],
         color: textColorMap[props.technologies[0]],

@@ -33,15 +33,15 @@ export default function About() {
             <h1 className="text-3xl font-bold self-center">ABOUT ME</h1>
             <p className="text-sm md:text-lg">
               My name is Filip Bernhard. I'm a recent graduate in web
-              development in search of opportunities in Paris so further my
-              skills. Currently I'm admitted to ESIEE-IT «Le Coding Factory» and
-              plan on starting my next chapter as an "alternant" student,
-              meaning I'll spend 2 weeks at a company and 2 weeks in school.
-              Right now I'm learning Java through different online courses, a
-              language i will also continue learning in my education. Other than
-              that i have ambitions learning Laravel, since i really enjoy
-              working with PHP and it seems like a fantastic for future
-              back-ends.
+              development in search of opportunities in Paris to further my
+              skills. React is my go to framework and i'm currently really
+              enjoying exploring all it's functionalities, however i usually
+              prefer working on the back-end. <br />
+              <br />
+              Right now I'm learning Java through different online courses.
+              Other than that i have ambitions learning Laravel, since i really
+              enjoy working with PHP and it seems like a fantastic option for
+              future back-ends.
             </p>
           </div>
           <div className="bg-background flex flex-col gap-5 border-3 hover:shadow-small transition duration-500 border-purple-600 shadow-corner p-5 rounded-md">
