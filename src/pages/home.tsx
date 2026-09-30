@@ -15,7 +15,7 @@ export default function Home() {
             </NavLink>
             <img
               className="h-50 transform translate-y-20 md:translate-y-0 lg:h-100"
-              src="./assets/images/fullbodySketch.png"
+              src="./assets/images/fullbodySketch.webp"
             />
           </div>
         </div>

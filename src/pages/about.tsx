@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 export default function About() {
   return (
     <div className="min-h-screen">
-      <div className="p-5 md:p-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
+      <div className="pt-10 px-5 md:p-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
         <div>
           <aside className="flex flex-col justify-center">
             <img
