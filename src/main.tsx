@@ -11,6 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <BrowserRouter basename="/">
     <title>Filip Bernhard</title>
     <meta name="Author" content="Filip Bernhard" />
+
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
