@@ -2,9 +2,9 @@ import { NavLink } from "react-router";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col gap-5">
+    <div className="min-h-screen flex flex-col">
       <div className="flex h-[100dvh] justify-center items-center">
-        <div className="flex flex-col p-5 bg-teal-200 w-[95%] lg:w-[80%] h-[80%] border-3 rounded-md">
+        <div className="flex flex-col p-5 bg-teal-200 w-[95%] lg:w-[80%] h-[95%] md:h-[80%] border-3 rounded-md">
           <h1 className="text-4xl lg:text-5xl">Web developer</h1>
           <div className="h-full flex items-center justify-around">
             <NavLink
