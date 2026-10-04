@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router";
 
 export default function Home() {
+  //Scrolls to top on page loading
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex h-[100dvh] justify-center items-center">

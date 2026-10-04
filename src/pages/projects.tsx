@@ -47,6 +47,10 @@ export default function Projects() {
       setIsLoading(false);
     }
   }, []);
+  //Scrolls to top on page loading
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col gap-5">

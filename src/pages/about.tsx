@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function About() {
+  //Scroll to top on page loading
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen">
       <div className="pt-10 px-5 md:p-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
