@@ -21,7 +21,7 @@ export default function useWindowWidth() {
 
 export function Header() {
   const width = useWindowWidth();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   if (width > 700) {
     return (
