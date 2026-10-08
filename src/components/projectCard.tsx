@@ -1,3 +1,5 @@
+import { ButtonSmall } from "./ButtonSmall";
+
 type Props = {
   title: string;
   imageURL: string;
@@ -43,25 +45,15 @@ export function ProductCard(props: Props) {
         src={props.imageURL}
         alt={props.title}
       />
-      <p className="text-sm ">{props.description}</p>
-      <div className="flex flex-row gap-4">
+      <p className="text-sm h-[100%]">{props.description}</p>
+      <div className="flex flex-row gap-5 justify-center">
         {props.githubLink !== "" && (
-          <a
-            href={props.githubLink}
-            target="_blank"
-            className="text-sm text-blue-700 hover:underline"
-          >
-            Visit Github page
-          </a>
+          <div>
+            <ButtonSmall text={"View source code"} url={props.githubLink} />
+          </div>
         )}
         {props.siteLink !== "" && (
-          <a
-            href={props.siteLink}
-            target="_blank"
-            className="text-sm text-blue-700 hover:underline"
-          >
-            View live demo
-          </a>
+          <ButtonSmall text={"View live demo"} url={props.siteLink} />
         )}
       </div>
       <div className="flex flex-row gap-1 justify-center my-2 max-w-[350px] flex-wrap">
