@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { ProjectSection } from "../components/projectSection";
-
 export default function Projects() {
   const universitySection = useRef(null);
   const personalSection = useRef(null);
@@ -54,12 +53,16 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen flex flex-col gap-5">
+      {/* Top section of page */}
       <div className="flex items-center justify-center h-[100dvh]">
+        {/*Outer most rectangle*/}
         <div className="flex items-center justify-center bg-orange-600 w-[90%] h-[70%] lg:w-[70%] lg:h-[70%] rounded-sm transform -translate-2 lg:-translate-10 shadow-full">
+          {/*Inner rectangle*/}
           <div className="flex flex-col gap-3 bg-primary p-10 rounded-sm w-[70%] h-[70%] transform translate-0 shadow-full">
             <h1 className="text-3xl lg:text-5xl font-bold text-center">
               My Projects
             </h1>
+            {/*Buttons outer div*/}
             <div className="transform lg:translate-x-25 lg:translate-y-10 lg:w-[70%] lg:h-[70%]">
               <nav className="flex flex-col lg:flex-row justify-center mt-5 gap-10">
                 <a
@@ -88,14 +91,6 @@ export default function Projects() {
       {!isLoading && (
         <div ref={personalSection}>
           <ProjectSection data={personalProjects} bgColor="bg-primary/90" />
-        </div>
-      )}
-      {!isLoading && (
-        <div ref={professionalSection}>
-          <ProjectSection
-            data={professionalProjects}
-            bgColor="bg-secondary/90"
-          />
         </div>
       )}
     </div>
