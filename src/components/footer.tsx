@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 export function Footer() {
   return (
-    <div className="w-full bg-primary shadow-footer self-center mt-5 p-5 grid gap-5 sm:grid-cols-1 md:grid-cols-3">
+    <div className="w-full bg-primary text-standardtext shadow-footer self-center mt-5 p-5 grid gap-5 sm:grid-cols-1 md:grid-cols-3">
       <section className="flex flex-col justify-center items-center">
         <h3 className="text-lg font-bold">Navigation</h3>
         <nav className="flex flex-col items-center md:items-start">

@@ -3,7 +3,7 @@ import { ProjectSection } from "../components/projectSection";
 export default function Projects() {
   const universitySection = useRef(null);
   const personalSection = useRef(null);
-  const professionalSection = useRef(null);
+  //const professionalSection = useRef(null);
 
   const scrollToSection = (elementRef: any) => {
     window.scrollTo({
@@ -17,7 +17,7 @@ export default function Projects() {
 
   let [universityProjects, setUniversityProjects]: any = useState([]);
   let [personalProjects, setPersonalProjects]: any = useState([]);
-  let [professionalProjects, setProfessionalProjects]: any = useState([]);
+  //let [professionalProjects, setProfessionalProjects]: any = useState([]);
 
   let url = "https://filipbernhard.com:3000";
 
@@ -32,13 +32,13 @@ export default function Projects() {
           const personal = json.filter(
             (project: any) => project.category === "personal",
           );
-          const professional = json.filter(
+          /* const professional = json.filter(
             (project: any) => project.category === "professional",
-          );
+          ); */
 
           setUniversityProjects(university);
           setPersonalProjects(personal);
-          setProfessionalProjects(professional);
+          //setProfessionalProjects(professional);
         });
     } catch (error) {
       setError(error instanceof Error ? error.message : String(error));

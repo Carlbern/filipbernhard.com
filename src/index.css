@@ -11,9 +11,10 @@
   }
 }
 @theme {
-  --shadow-corner: 10px 10px rgba(0, 0, 0, 0.8);
-  --shadow-full: 10px 10px rgba(0, 0, 0, 0.8), 20px 20px rgba(50, 50, 50, 0.8);
-  --shadow-small: 5px 5px rgba(0, 0, 0, 0.8);
+  --shadow-corner: 10px 10px var(--color-box-shadow);
+  --shadow-full:
+    10px 10px var(--color-box-shadow), 20px 20px rgba(50, 50, 50, 0.8);
+  --shadow-small: 5px 5px var(--color-box-shadow);
   --shadow-header: 0 0 0 5px rgba(0, 0, 0, 1);
   --shadow-footer: 0px -5px rgba(0, 0, 0, 1);
 }
@@ -21,7 +22,12 @@
   --color-background: rgba(250, 247, 242, 1);
   --color-primary: #26b186;
   --color-secondary: #e0da51;
-  --color-accent: rgba(43, 33, 24, 1);
+  --color-accent: #96f7e4;
+  --color-standardtext: black;
+
+  --color-box-shadow: rgba(0, 0, 0, 0.8);
+
+  --conic-gradiant: conic-gradiant(gray, white, gray);
 }
 
 @keyframes pulse {
@@ -33,12 +39,31 @@
 * {
   font-family: archivo;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--color-standardtext);
+}
+
 html,
 body {
-  background-image: url(../public/assets/images/background.webp);
+  background-color: var(--color-background);
+  background-image: radial-gradient(
+    circle,
+    var(--color-standardtext) 1.25px,
+    transparent 1.4px
+  );
+  background-size: 27px 27px;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url(../public/assets/images/backgroundMobile.webp);
-  }
+
+.dark {
+  --color-primary: #2a0756;
+  --color-secondary: #716d1d;
+  --color-background: rgb(0, 0, 0);
+  --color-accent: #588d82;
+  --color-standardtext: rgba(250, 247, 242, 1);
+
+  --color-box-shadow: rgba(250, 247, 242, 0.8);
 }

@@ -1,4 +1,4 @@
-import { ButtonSmall } from "./ButtonSmall";
+import { ButtonSmall } from "./buttonSmall";
 
 type Props = {
   title: string;
@@ -39,13 +39,23 @@ export function ProductCard(props: Props) {
         color: textColorMap[props.technologies[0]],
       }}
     >
-      <h3 className="text-lg font-semibold">{props.title}</h3>
+      <h3
+        className="text-lg font-semibold"
+        style={{ color: textColorMap[props.technologies[0]] }}
+      >
+        {props.title}
+      </h3>
       <img
         className="w-full rounded-md shadow-small shadow-gray-500"
         src={props.imageURL}
         alt={props.title}
       />
-      <p className="text-sm h-[100%]">{props.description}</p>
+      <p
+        className="text-sm h-[100%]"
+        style={{ color: textColorMap[props.technologies[0]] }}
+      >
+        {props.description}
+      </p>
       <div className="flex flex-row gap-5 justify-center">
         {props.githubLink !== "" && (
           <div>

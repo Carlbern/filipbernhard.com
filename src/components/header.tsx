@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
-
+import { ToggleButton } from "./toggleButton";
 //Functions taken from https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs#36862446
 function getWindowWidth() {
   const { innerWidth: width } = window;
@@ -23,10 +23,15 @@ export function Header() {
   const width = useWindowWidth();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    setOpen(false);
+  }, []);
+
   if (width > 700) {
     return (
-      <div className="flex justify-center bg-primary shadow-header absolute w-full font-fira font-medium">
-        <nav className="text-lg text-accent flex gap-10 p-[1px]">
+      <div className="grid grid-cols-3 bg-primary shadow-header absolute w-full font-fira font-medium">
+        <div className="EMPTY SPACER"></div>
+        <nav className="flex justify-center text-lg text-accent flex gap-10 p-[1px]">
           <Link className="hover:underline" to="/">
             Home
           </Link>
@@ -37,13 +42,16 @@ export function Header() {
             About
           </Link>
         </nav>
+        <div className="flex justify-end p-1">
+          <ToggleButton />
+        </div>
       </div>
     );
   } else {
     return (
       <>
         {open ? (
-          <div className="fixed left-0 flex flex-col w-[75%] h-screen z-50 bg-blue-400/95 ">
+          <div className="text-standardtext fixed left-0 flex flex-col w-[75%] h-screen z-50 bg-blue-400/95 ">
             <div className="flex items-center justify-between">
               <h1 className="text-2xl underline">Navigation</h1>
               <FaCaretLeft
@@ -62,6 +70,9 @@ export function Header() {
                 About
               </Link>
             </nav>
+            <div className="flex w-[100%] items-center justify-center m-5">
+              <ToggleButton />
+            </div>
           </div>
         ) : (
           <FaCaretRight
