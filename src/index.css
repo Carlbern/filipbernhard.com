@@ -9,6 +9,22 @@
     src: url(./assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf)
       format("truetype");
   }
+  @font-face {
+    font-family: "geist";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./assets/fonts/Geist/Geist-VariableFont_wght.ttf)
+      format("truetype");
+  }
+  @font-face {
+    font-family: "geist";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./assets/fonts/Geist/Geist-VariableFont_wght.ttf)
+      format("truetype");
+  }
 }
 @theme {
   --shadow-corner: 10px 10px var(--color-box-shadow);
@@ -37,7 +53,8 @@
   }
 }
 * {
-  font-family: archivo;
+  font-family: geist;
+  font-weight: 600;
 }
 h1,
 h2,
@@ -45,6 +62,12 @@ h3,
 h4,
 p {
   color: var(--color-standardtext);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: archivo;
 }
 
 html,

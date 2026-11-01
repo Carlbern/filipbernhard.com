@@ -31,7 +31,7 @@ export function Header() {
     return (
       <div className="grid grid-cols-3 bg-primary shadow-header absolute w-full font-fira font-medium">
         <div className="EMPTY SPACER"></div>
-        <nav className="flex justify-center text-lg text-accent flex gap-10 p-[1px]">
+        <nav className="flex justify-center text-lg text-standardtext flex gap-10 p-[1px]">
           <Link className="hover:underline" to="/">
             Home
           </Link>
