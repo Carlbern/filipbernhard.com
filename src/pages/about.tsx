@@ -43,18 +43,17 @@ export default function About() {
               enjoying exploring all it's functionalities, however i usually
               prefer working on the back-end. <br />
               <br />
-              Right now I'm learning Java through different online courses.
-              Other than that i have ambitions learning Laravel, since i really
-              enjoy working with PHP and it seems like a fantastic option for
-              future back-ends.
+              Right now I'm learning Java through different online courses. My
+              goal is to improve and eventually master the Spring Boot
+              framework, as a tool for creating future back-ends.
             </p>
           </div>
           <div className="bg-background flex flex-col gap-5 border-3 hover:shadow-small transition duration-500 border-purple-600 shadow-corner p-5 rounded-md">
             <h2 className="text-2xl font-bold self-center">TECH STACK</h2>
             <ul className="text-lg p-5">
               <li>
-                <span className="font-bold  ">Languages:</span> HTML/CSS
-                JavaScript/Typescript PHP SQL
+                <span className="font-bold  ">Languages:</span> HTML/CSS,
+                JavaScript/Typescript, Java, SQL
               </li>
               <li>
                 <span className="font-bold  ">Frameworks:</span> React, React
