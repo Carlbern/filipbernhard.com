@@ -45,7 +45,10 @@ export default function About() {
               <br />
               Right now I'm learning Java through different online courses. My
               goal is to improve and eventually master the Spring Boot
-              framework, as a tool for creating future back-ends.
+              framework, as a tool for creating future back-ends. Also I'm
+              invested in improving my skills in networking with the help of
+              Cisco Networking Academy. The goal is to recieve a CCNA
+              Certification.
             </p>
           </div>
           <div className="bg-background flex flex-col gap-5 border-3 hover:shadow-small transition duration-500 border-purple-600 shadow-corner p-5 rounded-md">
@@ -75,6 +78,7 @@ export default function About() {
             <ul className="text-lg p-5">
               <li className="list-disc ml-5">Java</li>
               <li className="list-disc ml-5">Docker</li>
+              <li className="list-disc ml-5">Cisco Networking Academy</li>
             </ul>
           </div>
 
